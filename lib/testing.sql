@@ -27,6 +27,7 @@ FROM projects
 INNER JOIN pledges
 ON projects.id = pledges.project_id;"
 
+'WHERE projects.category = music'
 
 
 "SELECT pledges.project_id SUM(pledges.amount) FROM pledges GROUP BY pledges.project_id;"
